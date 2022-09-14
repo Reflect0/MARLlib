@@ -5,7 +5,7 @@ import shutil
 import subprocess
 
 import ray
-import pommerman
+# import pommerman
 
 
 def do_link(file_path, force=False, local_path=None, packagent=None):
@@ -81,14 +81,14 @@ if __name__ == "__main__":
     do_link("rllib/policy/rnn_sequencing.py", force=args.yes, local_path="./rllib/policy/rnn_sequencing.py", packagent=ray)
     do_link("rllib/policy/torch_policy.py", force=args.yes, local_path="./rllib/policy/torch_policy.py", packagent=ray)
 
-    # pommerman
-    do_link('graphics.py', force=args.yes, local_path='./pommerman_patch/graphics.py', packagent=pommerman)
+    # # pommerman
+    # do_link('graphics.py', force=args.yes, local_path='./pommerman_patch/graphics.py', packagent=pommerman)
 
-    do_link("__init__.py", force=args.yes, local_path='./pommerman_patch/__init__.py', packagent=pommerman)
+    # do_link("__init__.py", force=args.yes, local_path='./pommerman_patch/__init__.py', packagent=pommerman)
 
-    do_link("forward_model.py", force=args.yes, local_path="./pommerman_patch/forward_model.py", packagent=pommerman)
+    # do_link("forward_model.py", force=args.yes, local_path="./pommerman_patch/forward_model.py", packagent=pommerman)
 
-    do_link("envs/v0.py", force=args.yes, local_path="./pommerman_patch/v0.py", packagent=pommerman)
+    # do_link("envs/v0.py", force=args.yes, local_path="./pommerman_patch/v0.py", packagent=pommerman)
 
 
     print("finish soft link")

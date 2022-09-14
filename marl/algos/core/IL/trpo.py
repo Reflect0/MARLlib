@@ -27,7 +27,7 @@ from marl.algos.utils.centralized_critic_hetero import (
 from marl.algos.utils.trust_regions import TrustRegionUpdator
 
 from ray.rllib.examples.centralized_critic import CentralizedValueMixin
-from icecream import ic
+# from icecream import ic
 
 tf1, tf, tfv = try_import_tf()
 torch, nn = try_import_torch()
